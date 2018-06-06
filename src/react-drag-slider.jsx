@@ -24,8 +24,8 @@ export class ReactScrollSlider extends React.Component {
         height: 0,
       },
       scrollbar: {
-        width: 40,
-        height: 20,
+        width: this.props.barSize.width || 40,
+        height: this.props.barSize.height || 20,
       },
       startPosition: 0,
       currentPosition: 0,

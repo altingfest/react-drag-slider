@@ -6,3 +6,8 @@
 
 - `width` (**number**) - width of slider
 - `barElement` (**React.Element**) - bar content
+- `barSize` (**{width, height}**) - bar sizes
+
+##Usage
+
+``
