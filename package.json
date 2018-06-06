@@ -10,7 +10,7 @@
   },
   "author": "altingfest",
   "license": "ISC",
-  "repository": "",
+  "repository": "https://github.com/altingfest/react-drag-slider",
   "dependencies": {
     "react": "^16.0.0"
   },
