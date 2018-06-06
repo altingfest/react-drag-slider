@@ -3,7 +3,7 @@ import React from 'react';
 
 const { log } = console;
 
-export class ReactScrollSlider extends React.Component {
+export class ReactDragSlider extends React.Component {
 
   constructor(props) {
     super(props);
