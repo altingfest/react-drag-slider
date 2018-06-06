@@ -1,0 +1,38 @@
+.react-scroll-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.react-scroll-slider__content {
+  display: inline-flex;
+  will-change: transform;
+  width: auto;
+}
+
+.react-scroll-slider__scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.react-scroll-slider__rail {
+  width: 100%;
+  height: 100%;
+  background-color: darkred;
+}
+
+.react-scroll-slider__bar {
+  height: 100%;
+  background-color: #169927;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  will-change: transform;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
