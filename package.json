@@ -1,10 +1,10 @@
 {
   "name": "react-drag-slider",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Simple react drag slider",
   "main": "dist/react-drag-slider.js",
   "files": [
-    "dist"
+    "dist", "src"
   ],
   "scripts": {
     "watch": "webpack --watch",
