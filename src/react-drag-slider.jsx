@@ -124,14 +124,14 @@ export class ReactDragSlider extends React.Component {
       height: this.state.scrollbar.height,
     };
     return (
-      <div className="react-scroll-slider" style={containerStyle}>
-        <div className="react-scroll-slider__content" ref={this.setContentRef} style={contentStyle}>
+      <div className="react-drag-slider" style={containerStyle}>
+        <div className="react-drag-slider__content" ref={this.setContentRef} style={contentStyle}>
           {this.props.children}
         </div>
-        <div className="react-scroll-slider__scroll" style={scrollStyle}>
-          <div className="react-scroll-slider__rail"></div>
+        <div className="react-drag-slider__scroll" style={scrollStyle}>
+          <div className="react-drag-slider__rail"></div>
           <div
-            className="react-scroll-slider__bar"
+            className="react-drag-slider__bar"
             onMouseDown={this.handleMouseDown}
             onMouseUp={this.handleMouseUp}
             style={barStyle}
