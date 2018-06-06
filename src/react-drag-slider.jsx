@@ -135,7 +135,7 @@ export class ReactScrollSlider extends React.Component {
             onMouseDown={this.handleMouseDown}
             onMouseUp={this.handleMouseUp}
             style={barStyle}
-          ></div>
+          >{this.props.barElement || ''}</div>
         </div>
       </div>
     );

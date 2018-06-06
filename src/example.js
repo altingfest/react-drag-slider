@@ -6,7 +6,7 @@ const dom = document.getElementById('react-scroll-slider');
 
 if (dom !== null) {
   render((
-    <ReactScrollSlider width={500}>
+    <ReactScrollSlider width={500} barElement="x">
       <img src="http://placehold.it/400x400" alt=""/><img src="http://placehold.it/400x400" alt=""/><img
       src="http://placehold.it/400x400" alt=""/><img src="http://placehold.it/400x400" alt=""/><img
       src="http://placehold.it/400x400" alt=""/><img src="http://placehold.it/400x400" alt=""/>
