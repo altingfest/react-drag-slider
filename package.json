@@ -6,7 +6,6 @@
   "scripts": {
     "watch": "webpack --watch",
     "build": "webpack -p",
-    "publish": "webpack -p && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "altingfest",
