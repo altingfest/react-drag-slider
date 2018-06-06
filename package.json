@@ -11,6 +11,7 @@
   "author": "altingfest",
   "license": "ISC",
   "repository": "https://github.com/altingfest/react-drag-slider",
+  "keywords": ["react", "drag", "slider", "scroll"],
   "dependencies": {
     "react": "^16.0.0"
   },
