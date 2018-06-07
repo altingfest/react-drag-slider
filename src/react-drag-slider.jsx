@@ -1,9 +1,7 @@
 import './index.scss';
 import React from 'react';
 
-const { log } = console;
-
-export class ReactDragSlider extends React.Component {
+class ReactDragSlider extends React.Component {
 
   constructor(props) {
     super(props);
@@ -142,3 +140,4 @@ export class ReactDragSlider extends React.Component {
   }
 }
 
+export default ReactDragSlider;
