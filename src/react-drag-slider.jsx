@@ -21,10 +21,10 @@ class ReactDragSlider extends React.Component {
         width: this.props.width,
         height: 0,
       },
-      scrollbar: {
-        width: this.props.barSize.width || 40,
-        height: this.props.barSize.height || 20,
-      },
+      scrollbar: Object.assign({
+        width: 40,
+        height: 20,
+      }, this.props.barSize),
       startPosition: 0,
       currentPosition: 0,
       movingPosition: 0,
@@ -33,6 +33,14 @@ class ReactDragSlider extends React.Component {
     };
     this.contentRef = null;
     this.interval = null;
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(this.state.container.width !== nextProps.width) {
+      const {container} = this.state;
+      container.width = nextProps.width;
+      this.setState({container});
+    }
   }
 
   componentDidMount() {
