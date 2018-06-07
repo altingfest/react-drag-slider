@@ -1,7 +1,7 @@
 import './index.scss';
 import React from 'react';
 
-class ReactDragSlider extends React.Component {
+export class ReactDragSlider extends React.Component {
 
   constructor(props) {
     super(props);
@@ -147,5 +147,3 @@ class ReactDragSlider extends React.Component {
     );
   }
 }
-
-export default ReactDragSlider;
