@@ -36,10 +36,10 @@ export class ReactDragSlider extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if(this.state.container.width !== nextProps.width) {
-      const {container} = this.state;
+    if (this.state.container.width !== nextProps.width) {
+      const { container } = this.state;
       container.width = nextProps.width;
-      this.setState({container});
+      this.setState({ container });
     }
   }
 
@@ -115,6 +115,7 @@ export class ReactDragSlider extends React.Component {
   render() {
     const { currentPosition, delta, movingPosition, percent, content, container } = this.state;
     const contentDisplace = Math.round((content.width - container.width) * percent);
+    const scrollOpacity = content.width <= container.width + 1 ? 0 : 1;
     const containerStyle = {
       width: this.props.width,
     };
@@ -139,7 +140,7 @@ export class ReactDragSlider extends React.Component {
             className="react-drag-slider__bar"
             onMouseDown={this.handleMouseDown}
             onMouseUp={this.handleMouseUp}
-            style={barStyle}
+            style={Object.assign(barStyle, { opacity: scrollOpacity })}
           >{this.props.barElement || ''}</div>
         </div>
       </div>
