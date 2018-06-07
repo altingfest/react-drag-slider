@@ -85,7 +85,6 @@ export class ReactDragSlider extends React.Component {
   }
 
   handleMouseUp(event) {
-    log(event.type, event);
     this.setState({
       currentPosition: this.state.movingPosition,
       delta: null,
