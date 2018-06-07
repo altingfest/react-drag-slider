@@ -1,6 +1,6 @@
 {
   "name": "react-drag-slider",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Simple react drag slider",
   "main": "dist/react-drag-slider.js",
   "files": [
